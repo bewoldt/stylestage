@@ -1,6 +1,35 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
+@font-face {
+    font-family: 'bluu';
+    src: url('fonts/bluunext-bold-webfont.woff2') format('woff2'),
+         url('fonts/bluunext-bold-webfont.woff') format('woff'),
+         url('fonts/bluunext-bold.ttf') format('truetype'),
+         url('fonts/bluunext-bold-webfont.svg#bluu_nextbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bluu';
+    src: url('fonts/bluunext-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/bluunext-bolditalic-webfont.woff') format('woff'),
+         url('fonts/bluunext-bolditalic.ttf') format('truetype'),
+         url('fonts/bluunext-bolditalic-webfont.svg#bluu_nextbold_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'bluu_nexttitling';
+    src: url('fonts/BluuNext-Titling.ttf') format('truetype'),
+        url('fonts/bluunext-titling.woff2') format('woff2'),
+        url('fonts/bluunext-titling.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
   --color-primary: #3a00ff;
   --color-primary-alt: #6f6ffd;
@@ -10,6 +39,7 @@
   --color-light: #fff;
   --color-anchor: #3a00ff;
   --font-family: 'Open Sans', sans-serif;
+  --heading-family: 'bluu';
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
   --font-size-h2: 3rem;
@@ -87,7 +117,9 @@ h4 {
   line-height: 1;
   margin-bottom: 0.65em;
 }
-
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-family);
+}
 h1 {
   font-size: var(--font-size-h1);
   font-size: clamp(2rem, 7vw, var(--font-size-h1));
@@ -217,8 +249,9 @@ footer > .container {
   padding: 0.5em;
 }
 
-/* Links 
---------------------------- */
+/* -----------------------------
+Links 
+-------------------------------- */
 a[class*="link"] {
   background-color: pink;
 }
