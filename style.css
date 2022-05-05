@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 :root {
   --color-primary: #3a00ff;
@@ -11,7 +12,8 @@
   --color-light: #fff;
   --color-anchor: #3a00ff;
   --font-family: 'Averia Serif Libre', cursive;
-  --font-heading-family: 'Calistoga', cursive;
+  /* --font-heading-family: 'Calistoga', cursive; */
+  --font-heading-family: 'Alfa Slab One', cursive;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
   --font-size-h2: 3rem;
@@ -95,6 +97,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: var(--font-size-h1);
   font-size: clamp(2rem, 7vw, var(--font-size-h1));
+  text-transform: uppercase;
 }
 
 h2 {
